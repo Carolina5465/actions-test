@@ -2,7 +2,7 @@ name: Trigger LightSpeed Pipeline
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '* * * * *' # cada minuto
   workflow_dispatch:
 
 jobs:
