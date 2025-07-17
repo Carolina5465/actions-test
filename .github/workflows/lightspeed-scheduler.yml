@@ -12,11 +12,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Git config
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "ma02035@citi.com"
-
       - name: Commit vacío para disparador de pipeline
         run: |
           git clone ssh://git@cedt-icg-bitbucketcli.nam.nrsroot.net:7999/baca-test-autom-147538/baca-testing-automation.git
